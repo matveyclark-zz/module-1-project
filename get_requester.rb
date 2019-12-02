@@ -12,7 +12,7 @@ url = "https://app.ticketmaster.com/discovery/v2/events.json?apikey=#{api_key}&c
 uri = URI.parse(url)
 response = Net::HTTP.get_response(uri)
 json_response = JSON.parse(response.body)
-<<<<<<< HEAD
+
 json_response
 
 events = json_response["_embedded"]["events"] 
@@ -29,4 +29,3 @@ data = json_response["_embedded"]["events"]
 data.each { |hash| NAMES_ARRAY.push(hash["name"]) }
 
 # binding.pry
->>>>>>> 4ceed922a40a416479eb974f56cf83856350a5b5

@@ -1,5 +1,6 @@
- require_relative 'get_requester.rb'
+ require_relative '../../get_requester.rb'
  require 'pry'
+
  class Venue 
 
         attr_reader :name 
