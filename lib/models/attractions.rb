@@ -17,6 +17,6 @@ class Attraction
 
 end
 
-VENUE_NAMES.uniq.each { |name| Attraction.new(name) }
+NAMES_ARRAY.uniq.each { |name| Attraction.new(name) }
 
 binding.pry
